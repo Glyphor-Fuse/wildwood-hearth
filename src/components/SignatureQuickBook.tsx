@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { format } from "date-fns";
-import { Calendar, Check, ChevronDown, ChevronUp, Star, Thermometer, Wind } from 'lucide-react';
+import { Calendar, Check, ChevronDown, ChevronUp, CloudSnow, Star, Thermometer, Wind } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
@@ -57,7 +57,7 @@ const SignatureQuickBook = () => {
                       !date && "text-muted-foreground"
                     )}
                   >
-                    <CalendarIcon className="mr-2 h-4 w-4" />
+                    <Calendar className="mr-2 h-4 w-4" />
                     {date ? format(date, "MMM dd") : <span>Arrival</span>}
                   </Button>
                 </PopoverTrigger>
